@@ -26,7 +26,7 @@ function createMainWindow() {
 }
 
 ipcMain.on('get-ver', (event) => {
-    event.reply('ver', '0.0.1');
+    event.reply('get-ver', '0.0.1');
 });
 
 app.on('ready', async () => { createMainWindow(); });
